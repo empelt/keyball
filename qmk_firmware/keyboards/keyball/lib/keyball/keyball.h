@@ -84,7 +84,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define KEYBALL_MODEL 44
 #endif
 
-#define KEYBALL_OLED_MAX_PRESSING_KEYCODES 6
+#define KEYBALL_OLED_MAX_PRESSING_KEYCODES 5
 
 //////////////////////////////////////////////////////////////////////////////
 // Types
@@ -223,6 +223,10 @@ void keyball_oled_render_keyinfo(void);
 /// OLED.  It shows layer mask with number (1~f) for active layers and '_' for
 /// inactive layers.
 void keyball_oled_render_layerinfo(void);
+
+void keyball_oled_render_ballinfo_t2(void);
+void keyball_oled_render_keyinfo_t2(void);
+void keyball_oled_render_cat(void);
 
 /// keyball_get_scroll_mode gets current scroll mode.
 bool keyball_get_scroll_mode(void);
